@@ -16,16 +16,26 @@
           <h5><a href="#" class="title" title="see more info"><?php echo $events[$i]['title']; ?></a> <a href="#" class="sync icon-share" title="Send to calendar"></a></h5>
           <div class="info">
             <dl>
-              <dt>Time</dt>
-              <dd><?php echo $events[$i]['hours']; ?></dd>
-              <dt>Location</dt>
-              <dd><?php echo $events[$i]['location']; ?></dd>
-              <dt>Price</dt>
-              <dd><?php echo $events[$i]['price']; ?></dd>
-              <dt>Contact</dt>
-              <dd><?php echo $events[$i]['contact']; ?></dd>
-              <dt>Website</dt>
-              <dd><a href="<?php echo $events[$i]['link']; ?>"><?php echo substr($events[$i]['link'], 0, 20) . '...'; ?></a></dd>
+              <?php if ($events[$i]['hours'] != ""): ?>
+                <dt>Time</dt>
+                <dd><?php echo $events[$i]['hours']; ?></dd>
+              <?php endif; ?>
+              <?php if ($events[$i]['location'] != ""): ?>
+                <dt>Location</dt>
+                <dd><?php echo $events[$i]['location']; ?></dd>
+              <?php endif; ?>
+              <?php if ($events[$i]['price']): ?>
+                <dt>Price</dt>
+                <dd><?php echo $events[$i]['price']; ?></dd>
+              <?php endif; ?>
+              <?php if ($events[$i]['contact']): ?>
+                <dt>Contact</dt>
+                <dd><?php echo $events[$i]['contact']; ?></dd>
+              <?php endif; ?>
+              <?php if ($events[$i]['link']): ?>
+                <dt>Website</dt>
+                <dd><a href="<?php echo $events[$i]['link']; ?>"><?php echo substr($events[$i]['link'], 0, 20) . '...'; ?></a></dd>
+              <?php endif; ?>
             </dl>
           </div>
         </div>

@@ -63,4 +63,23 @@
       'link' => 'http://events.r20.constantcontact.com/register/event?llr=giqsn7cab&oeidk=a07e6bev1g512442d48&oseq=a016ggohc86rd'
     ),
   );
+  $xml = simplexml_load_file(__DIR__.'/test.xml');
+  $events = array();
+  $event_counter = 1;
+  foreach ($xml->TEST as $item) {
+    $timestamp = strtotime((string)$item->Event_DateTime);
+    $new_event = array(
+      'id' => $event_counter,
+      'title' => $item->Event_Title,
+      'hours' => date('g:ia', $timestamp),
+      'location' => $item->Event_Location,
+      'price' => $item->Event_Price,
+      'contact' => $item->Event_Contact,
+      'link' => $item->Event_WebSite,
+    );
+    // put in correct cat
+    // put in correct date
+    $event_counter++;
+    $events[] = $new_event;
+  }
 ?>
