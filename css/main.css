@@ -61,7 +61,6 @@
 }
 
 .events h4 {
-  color: #fff;
   padding: .5em;
 }
 
@@ -84,27 +83,27 @@
 }
 
 .events h4.cat-1 {
-  background: #468847;
+  background: #89FFAC;
 }
 
 .events h4.cat-2 {
-  background: #3A87AD;
+  background: #7CE4E8;
 }
 
 .events h4.cat-3 {
-  background: #B94A48;
+  background: #E89C7C;
 }
 
 .events h4.cat-4 {
-  background: #F89406;
+  background: #FFEF97;
 }
 
 .events h4.cat-5 {
-  background: #3C2638;
+  background: #C6B2FF;
 }
 
 .events h4.cat-6 {
-  background: #A9533A;
+  background: #a9897c;
 }
 
 .item-box {
