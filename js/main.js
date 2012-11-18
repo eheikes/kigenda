@@ -26,6 +26,8 @@ $(function() {
       box.hide();
     } else {
       box.show();
+      box.parents('.cat').find('.item-box').removeClass('hidden');
+      box.parents('.cat').addClass('expanded');
     }
     event.preventDefault();
   });

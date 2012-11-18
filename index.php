@@ -16,10 +16,13 @@
       ?>
       <?php if (count($these_events) > 0): ?>
         <div class="cat">
-          <h4 class="cat-<?php echo $cat['id']; ?>"><a href="#" title="show all" class="title"><?php echo $cat['name']; ?></a> <a href="#" class="expander" title="show all">&raquo;</a></h4>
+          <h4 class="cat-<?php echo $cat['id']; ?>"><a href="#" title="show all" class="title"><?php echo $cat['name']; ?></a> <?php if (count($these_events) > $num_per_cat): ?><a href="#" class="expander" title="show all">&raquo;</a><?php endif; ?></h4>
           <?php foreach ($these_events as $j => $event): // loop through events ?>
             <div class="item-box event-<?php echo $event['id']; ?> <?php if ($j >= $num_per_cat): ?>hidden<?php endif; ?>">
-              <h5><a href="#" class="title" title="see more info"><?php echo $event['title']; ?></a> <a href="#" class="sync icon-share" title="Send to calendar"></a></h5>
+              <h5>
+                <a href="#" class="sync icon-share" title="Send to calendar"></a>
+                <a href="#" class="title" title="see more info"><?php echo $event['title']; ?></a>
+              </h5>
               <div class="info">
                 <dl>
                   <?php if ($event['hours'] != ""): ?>
@@ -40,7 +43,7 @@
                   <?php endif; ?>
                   <?php if ($event['link']): ?>
                     <dt>Website</dt>
-                    <dd><a href="<?php echo $event['link']; ?>"><?php echo substr($event['link'], 0, 20) . '...'; ?></a></dd>
+                    <dd><a target="_blank" href="<?php echo $event['link']; ?>"><?php echo substr($event['link'], 0, 20) . '...'; ?></a></dd>
                   <?php endif; ?>
                 </dl>
               </div>
