@@ -110,4 +110,11 @@ $(function() {
     event.preventDefault();
   });
 
+  // Randomly remove some categories for demo purposes.
+  $('.main .col').eq(2).find('.cat').eq(0).remove();
+  var cat_index = Math.floor(Math.random() * 5);
+  $('.main .col').eq(1).find('.cat').eq(cat_index).remove();
+  var cat_index = Math.floor(Math.random() * 5);
+  $('.main .col').eq(3).find('.cat').eq(cat_index).remove();
+
 });
