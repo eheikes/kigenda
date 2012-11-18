@@ -11,26 +11,32 @@
     array(
       'id' => 1,
       'name' => 'Sporting Events',
+      'xml'  => 'Sporting Events',
     ),
     array(
       'id' => 2,
       'name' => 'Community Events',
+      'xml'  => 'Community Events',
     ),
     array(
       'id' => 3,
       'name' => 'Special Events',
+      'xml'  => 'Special Events',
     ),
     array(
       'id' => 4,
       'name' => 'Fine Arts',
+      'xml'  => 'Fine Arts',
     ),
     array(
       'id' => 5,
       'name' => 'Classes &amp; Workshops',
+      'xml'  => 'Classes and Workshops',
     ),
     array(
       'id' => 6,
       'name' => 'School-Related',
+      'xml'  => 'School-Related',
     ),
   );
 
@@ -68,10 +74,13 @@
   $event_counter = 1;
   foreach ($xml->TEST as $item) {
     $timestamp = strtotime((string)$item->Event_DateTime);
+    //echo "<pre>"; var_dump($item); echo "</pre>";
     $new_event = array(
       'id' => $event_counter,
       'title' => $item->Event_Title,
+      'cat' => $item->Event_Cat,
       'hours' => date('g:ia', $timestamp),
+      'date' => date('Y-m-d', $timestamp),
       'location' => $item->Event_Location,
       'price' => $item->Event_Price,
       'contact' => $item->Event_Contact,

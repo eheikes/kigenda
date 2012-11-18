@@ -5,42 +5,49 @@
   <div class="col events">
     <h3><?php echo ($key == 0 ? "Today " . date('n/j', $date) : date('D n/j', $date)); ?></h3>
     <?php foreach ($categories as $cat): ?>
-      <div class="cat">
-        <?php $num_events = mt_rand(1, 10); ?>
-        <h4 class="cat-<?php echo $cat['id']; ?>"><a href="#" title="show all" class="title"><?php echo $cat['name']; ?></a> <?php if ($num_events > 1): ?><a href="#" class="expander" title="show all">&raquo;</a><?php endif; ?></h4>
-        <?php
-          for ($j = 0; $j < $num_events; $j++): // loop through events
-            $i = mt_rand(0, count($events)-1); // choose a random event
-        ?>
-        <div class="item-box event-<?php echo $events[$i]['id']; ?> <?php if ($j >= $num_per_cat): ?>hidden<?php endif; ?>">
-          <h5><a href="#" class="title" title="see more info"><?php echo $events[$i]['title']; ?></a> <a href="#" class="sync icon-share" title="Send to calendar"></a></h5>
-          <div class="info">
-            <dl>
-              <?php if ($events[$i]['hours'] != ""): ?>
-                <dt>Time</dt>
-                <dd><?php echo $events[$i]['hours']; ?></dd>
-              <?php endif; ?>
-              <?php if ($events[$i]['location'] != ""): ?>
-                <dt>Location</dt>
-                <dd><?php echo $events[$i]['location']; ?></dd>
-              <?php endif; ?>
-              <?php if ($events[$i]['price']): ?>
-                <dt>Price</dt>
-                <dd><?php echo $events[$i]['price']; ?></dd>
-              <?php endif; ?>
-              <?php if ($events[$i]['contact']): ?>
-                <dt>Contact</dt>
-                <dd><?php echo $events[$i]['contact']; ?></dd>
-              <?php endif; ?>
-              <?php if ($events[$i]['link']): ?>
-                <dt>Website</dt>
-                <dd><a href="<?php echo $events[$i]['link']; ?>"><?php echo substr($events[$i]['link'], 0, 20) . '...'; ?></a></dd>
-              <?php endif; ?>
-            </dl>
-          </div>
+      <?php 
+        $these_events = array();
+        foreach ($events as $event) { // loop through events
+          if ($event['cat'] == $cat['xml']
+          and $event['date'] == date('Y-m-d', $date)) {
+            $these_events[] = $event;
+          }
+        }
+      ?>
+      <?php if (count($these_events) > 0): ?>
+        <div class="cat">
+          <h4 class="cat-<?php echo $cat['id']; ?>"><a href="#" title="show all" class="title"><?php echo $cat['name']; ?></a> <a href="#" class="expander" title="show all">&raquo;</a></h4>
+          <?php foreach ($these_events as $j => $event): // loop through events ?>
+            <div class="item-box event-<?php echo $event['id']; ?> <?php if ($j >= $num_per_cat): ?>hidden<?php endif; ?>">
+              <h5><a href="#" class="title" title="see more info"><?php echo $event['title']; ?></a> <a href="#" class="sync icon-share" title="Send to calendar"></a></h5>
+              <div class="info">
+                <dl>
+                  <?php if ($event['hours'] != ""): ?>
+                    <dt>Time</dt>
+                    <dd><?php echo $event['hours']; ?></dd>
+                  <?php endif; ?>
+                  <?php if ($event['location'] != ""): ?>
+                    <dt>Location</dt>
+                    <dd><?php echo $event['location']; ?></dd>
+                  <?php endif; ?>
+                  <?php if ($event['price']): ?>
+                    <dt>Price</dt>
+                    <dd><?php echo $event['price']; ?></dd>
+                  <?php endif; ?>
+                  <?php if ($event['contact']): ?>
+                    <dt>Contact</dt>
+                    <dd><?php echo $event['contact']; ?></dd>
+                  <?php endif; ?>
+                  <?php if ($event['link']): ?>
+                    <dt>Website</dt>
+                    <dd><a href="<?php echo $event['link']; ?>"><?php echo substr($event['link'], 0, 20) . '...'; ?></a></dd>
+                  <?php endif; ?>
+                </dl>
+              </div>
+            </div>
+          <?php endforeach; ?>
         </div>
-        <?php endfor; ?>
-      </div>
+      <?php endif; ?>
     <?php endforeach; ?>
   </div>
 <?php endforeach; ?>
