@@ -7,7 +7,7 @@
     <?php foreach ($categories as $cat): ?>
       <div class="cat">
         <?php $num_events = mt_rand(1, 10); ?>
-        <h4 class="cat-<?php echo $cat['id']; ?>"><?php echo $cat['name']; ?><?php if ($num_events > 1): ?><a href="#" title="show all">&raquo;</a><?php endif; ?></h4>
+        <h4 class="cat-<?php echo $cat['id']; ?>"><a href="#" title="show all" class="title"><?php echo $cat['name']; ?></a> <?php if ($num_events > 1): ?><a href="#" class="expander" title="show all">&raquo;</a><?php endif; ?></h4>
         <?php
           for ($j = 0; $j < $num_events; $j++): // loop through events
             $i = mt_rand(0, count($events)-1); // choose a random event

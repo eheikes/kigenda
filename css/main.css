@@ -28,7 +28,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.controls {
+.nav-controls {
   margin-bottom: 10px;
   text-align: center;
 }
@@ -38,7 +38,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   background: #C9B5FF;
 }
 
-.controls span.zip {
+.nav-controls span.zip {
   margin: 0 2em;
 }
 
@@ -119,7 +119,11 @@ footer .col:first-child {
   position: relative;
 }
 
-.events h4 a {
+.events h4 a.title {
+  color: #333;
+}
+
+.events h4 a.expander {
   position: absolute;
   bottom: .75em;
   right: .5em;
@@ -131,7 +135,7 @@ footer .col:first-child {
   text-decoration: none;
 }
 
-.events h4 a.expanded {
+.events .expanded a.expander {
   -moz-transform:rotate(90deg);
   -webkit-transform:rotate(90deg);
   -o-transform:rotate(90deg);

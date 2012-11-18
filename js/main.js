@@ -8,13 +8,13 @@ $(function() {
   // Category expand/collapse
   $('.events h4 a').click(function(event) {
     var parent = $(this).parents('.cat');
-    if ($(this).hasClass('expanded')) {
+    if (parent.hasClass('expanded')) {
       parent.find('.item-box').slice(1).addClass('hidden');
       parent.find('.item-box .info').hide();
-      $(this).removeClass('expanded');
+      parent.removeClass('expanded');
     } else {
       parent.find('.item-box').removeClass('hidden');
-      $(this).addClass('expanded');
+      parent.addClass('expanded');
     }
     event.preventDefault();
   });
