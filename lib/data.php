@@ -39,6 +39,8 @@
       'id' => 1,
       'title' => 'Decision Making Workshop Series',
       'hours' => '11:30 AM  - 1:00 PM',
+      'location' => 'DMACC campus',
+      'price' => 'Free',
       'contact' => '<a href="mailto:jennifer@zachcoaching.com">Jennifer Zach</a>',
       'link' => 'http://events.r20.constantcontact.com/register/event?llr=giqsn7cab&oeidk=a07e6bev1g512442d48&oseq=a016ggohc86rd'
     ),
@@ -46,6 +48,8 @@
       'id' => 2,
       'title' => 'The University of Iowa Student Startup Fair',
       'hours' => '5:00 PM  - 7:00 PM',
+      'location' => 'U of I campus here is a super long text',
+      'price' => '$40 - $130',
       'contact' => 'Amy Jo Reimer-Myers',
       'link' => 'http://events.r20.constantcontact.com/register/event?llr=giqsn7cab&oeidk=a07e6bev1g512442d48&oseq=a016ggohc86rd'
     ),
@@ -53,6 +57,8 @@
       'id' => 3,
       'title' => 'Business Planning Workshop',
       'hours' => '11:30 AM  - 1:00 PM',
+      'location' => 'DMACC campus',
+      'price' => '$20',
       'contact' => '<a href="mailto:jennifer@zachcoaching.com">Jennifer Zach</a>',
       'link' => 'http://events.r20.constantcontact.com/register/event?llr=giqsn7cab&oeidk=a07e6bev1g512442d48&oseq=a016ggohc86rd'
     ),

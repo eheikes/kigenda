@@ -4,7 +4,17 @@
           box-sizing: border-box;
 }
 
+.utility {
+  text-align: right;
+  margin-top: .5em;
+}
+
+.utility .logout {
+  display: none;
+}
+
 .hero-unit {
+  margin-top: 10px;
   background: #C9B5FF url(../img/children-piggyback-rides.jpg) top right no-repeat;
   background-size: contain;
   border: 2px solid #000;
@@ -17,16 +27,27 @@
 .main .col {
   background: #fff;
   padding: 10px;
+  border: 1px solid #ccc;
 }
 
 .main .col {
-  border: 1px solid #ccc;
   width: 18.5%;
   margin-left: 1.75%;
   float: left;
 }
 
-.main .col:first-child {
+footer .col {
+  width: 23.5%;
+  margin-left: 1.75%;
+  float: left;
+}
+
+footer .col img {
+  width: 100%;
+}
+
+.main .col:first-child,
+footer .col:first-child {
   margin: 0;
 }
 
@@ -49,6 +70,15 @@
   text-align: center;
 }
 
+.utility .nav {
+  float: right;
+  margin-bottom: 0;
+}
+
+.utility .nav .welcome {
+  margin-right: 1em;
+}
+
 .filter a {
   width: 100%;
   display: block;
@@ -62,12 +92,16 @@
 
 .events h4 {
   padding: .5em;
+  padding-right: 1.75em;
+  position: relative;
 }
 
 .events h4 a {
-  float: right;
-  color: #fff;
-  border: 1px solid #fff;
+  position: absolute;
+  bottom: .75em;
+  right: .5em;
+  color: #333;
+  border: 1px solid #333;
   font-size: 12px;
   line-height: 1em;
   padding: .25em .5em .35em;
@@ -113,7 +147,11 @@
   border-top: 1px solid #3C2638;
 }
 
-.item-box h5 a {
+.item-box h5 a.title {
+  color: #333;
+}
+
+.item-box h5 a.sync {
   float: right;
   width: 14px;
   height: 14px;
@@ -147,6 +185,17 @@
 
 .main h3 {
   margin-top: 0;
+}
+
+a.sync {
+  position: relative;
+}
+
+a.sync .alert {
+  position: absolute;
+  left: 15px;
+  top: -5px;
+  border: 1px solid #333;
 }
 
 #datepicker {
