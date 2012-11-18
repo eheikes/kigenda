@@ -1,123 +1,49 @@
+<?php require 'lib/data.php'; ?>
 <?php require 'header.html'; ?>
-<div class="span3">
+
+<!-- <div class="span3 nav">
+  <div class="date">
+    <input type="button" value="&laquo;">
+    <input type="hidden" value="2012-11" id="datepicker">
+    <input type="button" value="&raquo;">
+  </div>
   <div class="filter">
-    <input type="button" class="btn" value="Attend">
-    <input type="button" class="btn selected" value="Participate">
-    <input type="button" class="btn" value="Other">
+    <h5>Filter</h5>
+    <?php foreach ($categories as $cat): ?>
+      <a href="#" class="event-<?php echo $cat['id']; ?>"><span class="icon-ok"></span> <?php echo $cat['name']; ?></a>
+    <?php endforeach; ?>
   </div>
 </div>
-<div class="span3">
-  <h3>Today 11/18</h3>
-  <div class="item-box">
-    <h4>Decision Making Workshop Series</h4>
-    <dl>
-      <dt>Hours</dt>
-      <dd>11:30 AM  - 1:00 PM</dd>
-      <dt>Contact</dt>
-      <dd><a href="mailto:jennifer@zachcoaching.com">Jennifer Zach</a>
-    </dl>
-    <p><a href="http://events.r20.constantcontact.com/register/event?llr=giqsn7cab&amp;oeidk=a07e6bev1g512442d48&amp;oseq=a016ggohc86rd">Additional Info</a></p>
+ -->
+
+<?php foreach ($dates as $key => $date): ?>
+  <div class="col events">
+    <h3><?php echo ($key == 0 ? "Today " . date('n/j', $date) : date('D n/j', $date)); ?></h3>
+    <?php foreach ($categories as $cat): ?>
+      <div class="cat">
+        <h4 class="cat-<?php echo $cat['id']; ?>"><?php echo $cat['name']; ?><a href="#" title="show all">&raquo;</a></h4>
+        <?php
+          for ($j = 0; $j < mt_rand(1, 10); $j++): // loop through events
+            $i = mt_rand(1, count($events)-1); // choose a random event
+        ?>
+        <div class="item-box event-<?php echo $events[$i]['id']; ?> <?php if ($j >= $num_per_cat): ?>hidden<?php endif; ?>">
+          <h5><?php echo $events[$i]['title']; ?> <a href="#" class="sync icon-share" title="Send to calendar"></a></h5>
+          <div class="info">
+            <dl>
+              <dt>Hours</dt>
+              <dd><?php echo $events[$i]['hours']; ?></dd>
+              <dt>Contact</dt>
+              <dd><?php echo $events[$i]['contact']; ?></dd>
+              <dt>Website</dt>
+              <dd><?php echo $events[$i]['link']; ?></dd>
+            </dl>
+          </div>
+        </div>
+        <?php endfor; ?>
+      </div>
+    <?php endforeach; ?>
+    <p class="empty">Sorry, no events found.</p>
   </div>
-  <div class="item-box">
-    <h4>The University of Iowa Student Startup Fair</h4>
-    <dl>
-      <dt>Hours</dt>
-      <dd>5:00 PM  - 7:00 PM</dd>
-      <dt>Contact</dt>
-      <dd>Amy Jo Reimer-Myers</dd>
-    </dl>
-    <p><a href="http://events.r20.constantcontact.com/register/event?llr=giqsn7cab&amp;oeidk=a07e6bev1g512442d48&amp;oseq=a016ggohc86rd">Additional Info</a></p>
-  </div>
-  <div class="item-box">
-    <h4>Decision Making Workshop Series</h4>
-    <dl>
-      <dt>Hours</dt>
-      <dd>11:30 AM  - 1:00 PM</dd>
-      <dt>Contact</dt>
-      <dd>Jennifer Zach <a href="mailto:jennifer@zachcoaching.com">jennifer@zachcoaching.com</a>
-    </dl>
-    <p>Making decisions is a natural part of life and never before have we had more options to choose from. If you find yourself overwhelmed by this, Jennifer Zach invites you to participate in a 3-part workshop series on simple, unique decision-making methods designed to help you make the best choice possible.</p>
-  </div>
-</div>
-<div class="span3">
-  <h3>Monday 11/19</h3>
-  <div class="item-box">
-    <h4>Decision Making Workshop Series</h4>
-    <dl>
-      <dt>Hours</dt>
-      <dd>11:30 AM  - 1:00 PM</dd>
-      <dt>Contact</dt>
-      <dd><a href="mailto:jennifer@zachcoaching.com">Jennifer Zach</a>
-    </dl>
-    <p><a href="http://events.r20.constantcontact.com/register/event?llr=giqsn7cab&amp;oeidk=a07e6bev1g512442d48&amp;oseq=a016ggohc86rd">Additional Info</a></p>
-  </div>
-  <div class="item-box">
-    <h4>The University of Iowa Student Startup Fair</h4>
-    <dl>
-      <dt>Hours</dt>
-      <dd>5:00 PM  - 7:00 PM</dd>
-      <dt>Contact</dt>
-      <dd>Amy Jo Reimer-Myers</dd>
-    </dl>
-    <p><a href="http://events.r20.constantcontact.com/register/event?llr=giqsn7cab&amp;oeidk=a07e6bev1g512442d48&amp;oseq=a016ggohc86rd">Additional Info</a></p>
-  </div>
-  <div class="item-box">
-    <h4>Decision Making Workshop Series</h4>
-    <dl>
-      <dt>Hours</dt>
-      <dd>11:30 AM  - 1:00 PM</dd>
-      <dt>Contact</dt>
-      <dd>Jennifer Zach <a href="mailto:jennifer@zachcoaching.com">jennifer@zachcoaching.com</a>
-    </dl>
-    <p>Making decisions is a natural part of life and never before have we had more options to choose from. If you find yourself overwhelmed by this, Jennifer Zach invites you to participate in a 3-part workshop series on simple, unique decision-making methods designed to help you make the best choice possible.</p>
-  </div>
-</div>
-<div class="span3">
-  <h3>Tuesday 11/20</h3>
-  <div class="item-box">
-    <h4>Decision Making Workshop Series</h4>
-    <dl>
-      <dt>Hours</dt>
-      <dd>11:30 AM  - 1:00 PM</dd>
-      <dt>Contact</dt>
-      <dd><a href="mailto:jennifer@zachcoaching.com">Jennifer Zach</a>
-    </dl>
-    <p><a href="http://events.r20.constantcontact.com/register/event?llr=giqsn7cab&amp;oeidk=a07e6bev1g512442d48&amp;oseq=a016ggohc86rd">Additional Info</a></p>
-    <div class="btn-group">
-      <button class="btn"><a class="icon-ok"></a></button>
-      <button class="btn">Maybe</button>
-      <button class="btn"><a class="icon-ban-circle"></a></button>
-    </div>
-  </div>
-  <div class="item-box">
-    <h4>The University of Iowa Student Startup Fair</h4>
-    <dl>
-      <dt>Hours</dt>
-      <dd>5:00 PM  - 7:00 PM</dd>
-      <dt>Contact</dt>
-      <dd>Amy Jo Reimer-Myers</dd>
-    </dl>
-    <p><a href="http://events.r20.constantcontact.com/register/event?llr=giqsn7cab&amp;oeidk=a07e6bev1g512442d48&amp;oseq=a016ggohc86rd">Additional Info</a></p>
-  </div>
-  <div class="item-box">
-    <h4>Decision Making Workshop Series</h4>
-    <dl>
-      <dt>Hours</dt>
-      <dd>11:30 AM  - 1:00 PM</dd>
-      <dt>Contact</dt>
-      <dd>Jennifer Zach <a href="mailto:jennifer@zachcoaching.com">jennifer@zachcoaching.com</a>
-    </dl>
-    <p>Making decisions is a natural part of life and never before have we had more options to choose from. If you find yourself overwhelmed by this, Jennifer Zach invites you to participate in a 3-part workshop series on simple, unique decision-making methods designed to help you make the best choice possible.</p>
-  </div>
-  <div class="item-box">
-    <h4>Decision Making Workshop Series</h4>
-    <dl>
-      <dt>Hours</dt>
-      <dd>11:30 AM  - 1:00 PM</dd>
-      <dt>Contact</dt>
-      <dd>Jennifer Zach <a href="mailto:jennifer@zachcoaching.com">jennifer@zachcoaching.com</a>
-    </dl>
-    <p>Making decisions is a natural part of life and never before have we had more options to choose from. If you find yourself overwhelmed by this, Jennifer Zach invites you to participate in a 3-part workshop series on simple, unique decision-making methods designed to help you make the best choice possible.</p>
-  </div>
-</div>
+<?php endforeach; ?>
+
 <?php require 'footer.html'; ?>

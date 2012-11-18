@@ -14,9 +14,20 @@
 }
 
 .container-fluid footer,
-.main .span3 {
+.main .col {
   background: #fff;
   padding: 10px;
+}
+
+.main .col {
+  border: 1px solid #ccc;
+  width: 18.5%;
+  margin-left: 1.75%;
+  float: left;
+}
+
+.main .col:first-child {
+  margin: 0;
 }
 
 .container-fluid footer {
@@ -30,14 +41,70 @@
   font-weight: bold;
 }
 
-.filter .btn {
+.main .nav {
+  background: #efefef;
+}
+
+.main .nav .date {
+  text-align: center;
+}
+
+.filter a {
   width: 100%;
   display: block;
   text-align: left;
 }
 
-.date-nav {
-  text-align: center;
+.filter a:link,
+.filter a:visited {
+  color: #333;
+}
+
+.events h4 {
+  color: #fff;
+  padding: .5em;
+}
+
+.events h4 a {
+  float: right;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 12px;
+  line-height: 1em;
+  padding: .25em .5em .35em;
+  text-decoration: none;
+}
+
+.events h4 a.expanded {
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+
+.events h4.cat-1 {
+  background: #468847;
+}
+
+.events h4.cat-2 {
+  background: #3A87AD;
+}
+
+.events h4.cat-3 {
+  background: #B94A48;
+}
+
+.events h4.cat-4 {
+  background: #F89406;
+}
+
+.events h4.cat-5 {
+  background: #3C2638;
+}
+
+.events h4.cat-6 {
+  background: #A9533A;
 }
 
 .item-box {
@@ -45,6 +112,24 @@
   font-size: 80%;
   line-height: 1.25em;
   border-top: 1px solid #3C2638;
+}
+
+.item-box h5 a {
+  float: right;
+  width: 14px;
+  height: 14px;
+}
+
+.item-box:nth-of-type(1) {
+  border-top: none;
+}
+
+.item-box.hidden {
+  display: none;
+}
+
+.item-box .info {
+  display: none;
 }
 
 .item-box dt {
