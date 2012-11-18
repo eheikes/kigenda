@@ -81,6 +81,10 @@ footer .col:first-child {
   font-weight: bold;
 }
 
+.main {
+  margin-bottom: 10px;
+}
+
 .main .nav {
   background: #efefef;
 }
@@ -215,4 +219,9 @@ a.sync .alert {
   left: 15px;
   top: -5px;
   border: 1px solid #333;
+}
+
+.copyright {
+  font-size: xx-small;
+  margin-bottom: 10px;
 }
