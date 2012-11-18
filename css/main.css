@@ -1,0 +1,72 @@
+* {
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero-unit {
+  background: #C9B5FF url(../img/children-piggyback-rides.jpg) top right no-repeat;
+  background-size: contain;
+  border: 2px solid #000;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+     -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.container-fluid footer,
+.main .span3 {
+  background: #fff;
+  padding: 10px;
+}
+
+.container-fluid footer {
+  margin-top: 1em;
+  background: #fff;
+  padding: 10px;
+}
+
+.tagline {
+  font-family: 'Adamina', serif;
+  font-weight: bold;
+}
+
+.filter .btn {
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+.date-nav {
+  text-align: center;
+}
+
+.item-box {
+  margin-top: 1em;
+  font-size: 80%;
+  line-height: 1.25em;
+  border-top: 1px solid #3C2638;
+}
+
+.item-box dt {
+  float: left;
+  margin-right: .5em;
+}
+
+.item-box dt:after {
+  content: ":";
+}
+
+.item-box img {
+  width: 100%;
+  border: 1px solid #3C2638;
+}
+
+.main h3 {
+  margin-top: 0;
+}
+
+#datepicker {
+  width: 100%;
+}
+
+/* stripe color #f1981a*/
