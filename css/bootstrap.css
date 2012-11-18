@@ -3044,6 +3044,7 @@ button.close {
   -webkit-appearance: none;
 }
 
+.ui-datepicker-trigger,
 .btn {
   display: inline-block;
   *display: inline;

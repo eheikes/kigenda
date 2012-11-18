@@ -33,4 +33,20 @@
         <h1><img src="img/kigenda.png" alt="KiGENDA"></h1>
         <div class="tagline">Find Local Events for Your Kid&#8217;s Agenda</div>
       </div>
+      <div class="row-fluid controls form-inline">
+        <input type="button" class="btn" value="&laquo;" title="Previous day">
+        <input type="hidden" id="datepicker" value="">
+        <span class="zip">
+          Location:
+          <input id="zip" type="text" class="input-small" value="50309" placeholder="City or Zip Code">
+          within
+          <select id="distance" class="input-small">
+            <option value="15">15 miles</option>
+            <option value="30" selected>30 miles</option>
+            <option value="60">60 miles</option>
+          </select>
+        </span>
+        <input type="button" class="btn" value="&raquo;" title="Next day">
+      </div>
+
       <div class="row-fluid main">

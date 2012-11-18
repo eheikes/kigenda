@@ -1,23 +1,8 @@
 $(function() {
+  // Date picker
   $('#datepicker').datepicker({
     showOn: 'button',
-    buttonText: 'November 2012'
-  });
-
-  // Category filtering
-  $('.filter a').click(function(event) {
-    var icon = $(this).find('span');
-    var type = $(this).attr('class');
-    if (icon.hasClass('icon-ok')) {
-      icon.addClass('icon-blank');
-      icon.removeClass('icon-ok');
-      $('.events .' + type).hide();
-    } else {
-      icon.addClass('icon-ok');
-      icon.removeClass('icon-blank');
-      $('.events .' + type).show();
-    }
-    event.preventDefault();
+    buttonText: 'Sun 11/18'
   });
 
   // Category expand/collapse
@@ -43,11 +28,6 @@ $(function() {
       box.show();
     }
     event.preventDefault();
-  });
-
-  // Sync to cal
-  $('a.sync').click(function(event) {
-    
   });
 
   // Sync to cal
