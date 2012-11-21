@@ -82,6 +82,7 @@
       'hours' => date('g:ia', $timestamp),
       'date' => date('Y-m-d', $timestamp),
       'location' => $item->Event_Location,
+      'distance' => $item->Event_Distance,
       'price' => $item->Event_Price,
       'contact' => $item->Event_Contact,
       'link' => $item->Event_WebSite,

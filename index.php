@@ -25,23 +25,23 @@
               </h5>
               <div class="info">
                 <dl>
-                  <?php if ($event['hours'] != ""): ?>
+                  <?php if (@$event['hours'] != ""): ?>
                     <dt>Time</dt>
                     <dd><?php echo $event['hours']; ?></dd>
                   <?php endif; ?>
-                  <?php if ($event['location'] != ""): ?>
+                  <?php if (@$event['location'] != ""): ?>
                     <dt>Location</dt>
-                    <dd><?php echo $event['location']; ?></dd>
+                    <dd><?php echo $event['location']; ?> <?php if (@$event['distance'] != '') echo "(" . $event['distance'] . " mi)"; ?></dd>
                   <?php endif; ?>
-                  <?php if ($event['price']): ?>
+                  <?php if (@$event['price']): ?>
                     <dt>Price</dt>
                     <dd><?php echo $event['price']; ?></dd>
                   <?php endif; ?>
-                  <?php if ($event['contact']): ?>
+                  <?php if (@$event['contact']): ?>
                     <dt>Contact</dt>
                     <dd><?php echo $event['contact']; ?></dd>
                   <?php endif; ?>
-                  <?php if ($event['link']): ?>
+                  <?php if (@$event['link']): ?>
                     <dt>Website</dt>
                     <dd><a target="_blank" href="<?php echo $event['link']; ?>"><?php echo substr($event['link'], 0, 20) . '...'; ?></a></dd>
                   <?php endif; ?>

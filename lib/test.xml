@@ -3,7 +3,8 @@
 <TEST>
     <Event_Title>ICubs Game</Event_Title>
     <Event_DateTime>2012-11-18T20:00:00-06:00</Event_DateTime>
-	<Event_Location>4000 Locust Des Moines, IA 50309</Event_Location>
+  <Event_Location>4000 Locust Des Moines, IA 50309</Event_Location>
+	<Event_Distance>2.8</Event_Distance>
 	<Event_Contact>marco.rubio@gmail.com or 515.441.6362</Event_Contact>
     <Event_Price>$15.99</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -31,6 +32,7 @@
     <Event_Title>Baby Olympics - Potty Run</Event_Title>
     <Event_DateTime>2012-11-18T10:00:00-06:00</Event_DateTime>
 	<Event_Location>4000 Locust Des Moines, IA</Event_Location>
+  <Event_Distance>3.5</Event_Distance>
 	<Event_Contact>babydoos@gmail.com or 515.451.2100</Event_Contact>
     <Event_Price>$20.99</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -40,6 +42,7 @@
     <Event_Title>Blues Festival</Event_Title>
     <Event_DateTime>2012-11-18T19:00:00-06:00</Event_DateTime>
 	<Event_Location>Ze place for Blues Des Moines, IA</Event_Location>
+  <Event_Distance>4.4</Event_Distance>
 	<Event_Contact>bluesfestival@gmail.com or 515.809.2012</Event_Contact>
     <Event_Price>$29.99</Event_Price>
 	<Event_Cat>Fine Arts</Event_Cat>
@@ -49,6 +52,7 @@
     <Event_Title>Latino Heritage Festival</Event_Title>
     <Event_DateTime>2012-11-18T12:00:00-06:00</Event_DateTime>
 	<Event_Location>317 6th Ave Des Moines, IA</Event_Location>
+  <Event_Distance>0.0</Event_Distance>
 	<Event_Contact>latinos@heritage.com or 515.221.8654</Event_Contact>
     <Event_Price>Free</Event_Price>
 	<Event_Cat>Community Events</Event_Cat>
@@ -58,6 +62,7 @@
     <Event_Title>Menace vs. Cyclones (Soccer)</Event_Title>
     <Event_DateTime>2012-11-18T21:00:00-06:00</Event_DateTime>
 	<Event_Location>Soccer Field, Des Moines, IA</Event_Location>
+  <Event_Distance>5.1</Event_Distance>
 	<Event_Contact>latinos@heritage.com or 515.500.9801</Event_Contact>
     <Event_Price>$7.99</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -67,6 +72,7 @@
     <Event_Title>Buccaneers vs. Youngstown (Hockey)</Event_Title>
     <Event_DateTime>2012-11-18T20:00:00-06:00</Event_DateTime>
 	<Event_Location>Hockey Rink Des Moines, IA</Event_Location>
+  <Event_Distance>14.6</Event_Distance>
 	<Event_Contact>buccanneers@gmail.com or 515.800.9102</Event_Contact>
     <Event_Price>$5.00</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -76,6 +82,7 @@
     <Event_Title>ICubs Game</Event_Title>
     <Event_DateTime>2012-11-19T20:00:00-06:00</Event_DateTime>
 	<Event_Location>4000 Locust Des Moines, IA 50309</Event_Location>
+  <Event_Distance>2.8</Event_Distance>
 	<Event_Contact>marco.rubio@gmail.com or 515.441.6362</Event_Contact>
     <Event_Price>$15.99</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -103,6 +110,7 @@
     <Event_Title>Baby Olympics - Potty Run</Event_Title>
     <Event_DateTime>2012-11-19T10:00:00-06:00</Event_DateTime>
 	<Event_Location>4000 Locust Des Moines, IA</Event_Location>
+  <Event_Distance>3.5</Event_Distance>
 	<Event_Contact>babydoos@gmail.com or 515.451.2100</Event_Contact>
     <Event_Price>$20.99</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -112,6 +120,7 @@
     <Event_Title>Blues Festival</Event_Title>
     <Event_DateTime>2012-11-19T19:00:00-06:00</Event_DateTime>
 	<Event_Location>Ze place for Blues Des Moines, IA</Event_Location>
+  <Event_Distance>4.4</Event_Distance>
 	<Event_Contact>bluesfestival@gmail.com or 515.809.2012</Event_Contact>
     <Event_Price>$29.99</Event_Price>
 	<Event_Cat>Fine Arts</Event_Cat>
@@ -130,6 +139,7 @@
     <Event_Title>Menace vs. Cyclones (Soccer)</Event_Title>
     <Event_DateTime>2012-11-19T21:00:00-06:00</Event_DateTime>
 	<Event_Location>Soccer Field, Des Moines, IA</Event_Location>
+  <Event_Distance>5.1</Event_Distance>
 	<Event_Contact>latinos@heritage.com or 515.500.9801</Event_Contact>
     <Event_Price>$7.99</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -139,6 +149,7 @@
     <Event_Title>Buccaneers vs. Youngstown (Hockey)</Event_Title>
     <Event_DateTime>2012-11-19T20:00:00-06:00</Event_DateTime>
 	<Event_Location>Hockey Rink Des Moines, IA</Event_Location>
+  <Event_Distance>14.6</Event_Distance>
 	<Event_Contact>buccanneers@gmail.com or 515.800.9102</Event_Contact>
     <Event_Price>$5.00</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -166,6 +177,7 @@
     <Event_Title>Blues Festival</Event_Title>
     <Event_DateTime>2012-11-20T19:00:00-06:00</Event_DateTime>
 	<Event_Location>Ze place for Blues Des Moines, IA</Event_Location>
+  <Event_Distance>4.4</Event_Distance>
 	<Event_Contact>bluesfestival@gmail.com or 515.809.2012</Event_Contact>
     <Event_Price>$29.99</Event_Price>
 	<Event_Cat>Fine Arts</Event_Cat>
@@ -175,6 +187,7 @@
     <Event_Title>Latino Heritage Festival</Event_Title>
     <Event_DateTime>2012-11-20T12:00:00-06:00</Event_DateTime>
 	<Event_Location>317 6th Ave Des Moines, IA</Event_Location>
+  <Event_Distance>0.0</Event_Distance>
 	<Event_Contact>latinos@heritage.com or 515.221.8654</Event_Contact>
     <Event_Price>Free</Event_Price>
 	<Event_Cat>Community Events</Event_Cat>
@@ -184,6 +197,7 @@
     <Event_Title>ICubs Game</Event_Title>
     <Event_DateTime>2012-11-21T20:00:00-06:00</Event_DateTime>
 	<Event_Location>4000 Locust Des Moines, IA 50309</Event_Location>
+  <Event_Distance>2.8</Event_Distance>
 	<Event_Contact>marco.rubio@gmail.com or 515.441.6362</Event_Contact>
     <Event_Price>$15.99</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -211,6 +225,7 @@
     <Event_Title>Baby Olympics - Potty Run</Event_Title>
     <Event_DateTime>2012-11-21T10:00:00-06:00</Event_DateTime>
 	<Event_Location>4000 Locust Des Moines, IA</Event_Location>
+  <Event_Distance>3.5</Event_Distance>
 	<Event_Contact>babydoos@gmail.com or 515.451.2100</Event_Contact>
     <Event_Price>$20.99</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -220,6 +235,7 @@
     <Event_Title>Blues Festival</Event_Title>
     <Event_DateTime>2012-11-21T19:00:00-06:00</Event_DateTime>
 	<Event_Location>Ze place for Blues Des Moines, IA</Event_Location>
+  <Event_Distance>4.4</Event_Distance>
 	<Event_Contact>bluesfestival@gmail.com or 515.809.2012</Event_Contact>
     <Event_Price>$29.99</Event_Price>
 	<Event_Cat>Fine Arts</Event_Cat>
@@ -229,6 +245,7 @@
     <Event_Title>Latino Heritage Festival</Event_Title>
     <Event_DateTime>2012-11-21T12:00:00-06:00</Event_DateTime>
 	<Event_Location>317 6th Ave Des Moines, IA</Event_Location>
+  <Event_Distance>0.0</Event_Distance>
 	<Event_Contact>latinos@heritage.com or 515.221.8654</Event_Contact>
     <Event_Price>Free</Event_Price>
 	<Event_Cat>Community Events</Event_Cat>
@@ -238,6 +255,7 @@
     <Event_Title>Menace vs. Cyclones (Soccer)</Event_Title>
     <Event_DateTime>2012-11-21T21:00:00-06:00</Event_DateTime>
 	<Event_Location>Soccer Field, Des Moines, IA</Event_Location>
+  <Event_Distance>5.1</Event_Distance>
 	<Event_Contact>latinos@heritage.com or 515.500.9801</Event_Contact>
     <Event_Price>$7.99</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -247,6 +265,7 @@
     <Event_Title>Buccaneers vs. Youngstown (Hockey)</Event_Title>
     <Event_DateTime>2012-11-21T20:00:00-06:00</Event_DateTime>
 	<Event_Location>Hockey Rink Des Moines, IA</Event_Location>
+  <Event_Distance>14.6</Event_Distance>
 	<Event_Contact>buccanneers@gmail.com or 515.800.9102</Event_Contact>
     <Event_Price>$5.00</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -256,6 +275,7 @@
     <Event_Title>ICubs Game</Event_Title>
     <Event_DateTime>2012-11-22T20:00:00-06:00</Event_DateTime>
 	<Event_Location>4000 Locust Des Moines, IA 50309</Event_Location>
+  <Event_Distance>2.8</Event_Distance>
 	<Event_Contact>marco.rubio@gmail.com or 515.441.6362</Event_Contact>
     <Event_Price>$15.99</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -283,6 +303,7 @@
     <Event_Title>Baby Olympics - Potty Run</Event_Title>
     <Event_DateTime>2012-11-22T10:00:00-06:00</Event_DateTime>
 	<Event_Location>4000 Locust Des Moines, IA</Event_Location>
+  <Event_Distance>3.5</Event_Distance>
 	<Event_Contact>babydoos@gmail.com or 515.451.2100</Event_Contact>
     <Event_Price>$20.99</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
@@ -292,6 +313,7 @@
     <Event_Title>Blues Festival</Event_Title>
     <Event_DateTime>2012-11-22T19:00:00-06:00</Event_DateTime>
 	<Event_Location>Ze place for Blues Des Moines, IA</Event_Location>
+  <Event_Distance>4.4</Event_Distance>
 	<Event_Contact>bluesfestival@gmail.com or 515.809.2012</Event_Contact>
     <Event_Price>$29.99</Event_Price>
 	<Event_Cat>Fine Arts</Event_Cat>
@@ -301,9 +323,28 @@
     <Event_Title>Buccaneers vs. Youngstown (Hockey)</Event_Title>
     <Event_DateTime>2012-11-22T20:00:00-06:00</Event_DateTime>
 	<Event_Location>Hockey Rink Des Moines, IA</Event_Location>
+  <Event_Distance>14.6</Event_Distance>
 	<Event_Contact>buccanneers@gmail.com or 515.800.9102</Event_Contact>
     <Event_Price>$5.00</Event_Price>
 	<Event_Cat>Sporting Events</Event_Cat>
 	<Event_WebSite>http://www.dsmbuccaneers.com</Event_WebSite>
+   </TEST>
+<TEST>
+    <Event_Title>North High School Thanksgiving</Event_Title>
+    <Event_DateTime>2012-11-20T12:00:00-06:00</Event_DateTime>
+  <Event_Location>North High School, IA</Event_Location>
+  <Event_Contact>north@highschool.org or 515.800.9102</Event_Contact>
+    <Event_Price>$7.00</Event_Price>
+  <Event_Cat>School-Related</Event_Cat>
+  <Event_WebSite>http://www.dsmbuccaneers.com</Event_WebSite>
+   </TEST>
+<TEST>
+    <Event_Title>North High School Thanksgiving</Event_Title>
+    <Event_DateTime>2012-11-21T12:00:00-06:00</Event_DateTime>
+  <Event_Location>North High School, IA</Event_Location>
+  <Event_Contact>north@highschool.org or 515.800.9102</Event_Contact>
+    <Event_Price>$7.00</Event_Price>
+  <Event_Cat>School-Related</Event_Cat>
+  <Event_WebSite>http://www.dsmbuccaneers.com</Event_WebSite>
    </TEST>
 </NewDataSet>
