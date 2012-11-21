@@ -2,7 +2,7 @@
   $num_per_cat = 1;
 
   $dates = array();
-  $now = time();
+  $now = mktime(12, 0, 0, 11, 18, 2012); //time();
   for ($i = 0; $i < 5; $i++) {
     $dates[] = $now + ($i * 60*60*24);
   }
